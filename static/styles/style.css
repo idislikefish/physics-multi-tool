@@ -24,7 +24,9 @@ main {
     text-align: center;
 }
 
-.box.h1, .box.h2, .box.h3 {
+.box.h1,
+.box.h2,
+.box.h3 {
     color: #333;
 }
 
@@ -42,7 +44,9 @@ li {
     margin-bottom: 5px;
 }
 
-input, select, button {
+input,
+select,
+button {
     margin-top: 10px;
     padding: 10px;
     border: none;

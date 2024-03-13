@@ -1,7 +1,11 @@
 function move_to_topic() {
     var selection = document.getElementById("select").value;
 
-    document.location.href = "/topics/" + selection
+    if (selection === "null") {
+        alert("Please choose a topic from the dropdown menu.");
+    } else {
+        document.location.href = "/topics/" + selection;
+    }
 }
 
 function newton2() {
@@ -12,6 +16,6 @@ function newton2() {
     if (mass && acc) {
         answer.innerText = "F = " + mass * acc;
     } else {
-        answer.innerText = "F ="
+        answer.innerText = "F =";
     }
 }

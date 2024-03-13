@@ -2,15 +2,17 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 @app.route("/topics/<page>")
 def calc(page):
     if page == "add":
         return render_template("add-topic.html")
-    return render_template(page+".html")
+    return render_template(page + ".html")
 
 
 if __name__ == "__main__":
