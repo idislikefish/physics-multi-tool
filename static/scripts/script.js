@@ -14,7 +14,7 @@ function newton2() {
     var answer = document.getElementById("answer");
 
     if (mass && acc) {
-        answer.innerText = "F = " + mass * acc;
+        answer.innerText = "F = " + mass * acc + "N";
     } else {
         answer.innerText = "F =";
     }
