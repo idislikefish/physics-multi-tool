@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/style.css') }}"
+        />
+        <link
+            rel="icon"
+            href="{{ url_for('static', filename='images/icon.png') }}"
+        />
+        <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+        <title>Physics Multi-Tool</title>
+    </head>
+    <body>
+        <header>
+            <img
+                src="{{ url_for('static', filename='images/icon.png') }}"
+                style="display: inline;"
+                height="75px"
+            /> &ensp;
+            <h1 style="display: inline;">Physics Multi-Tool</h1>
+        </header>
+        <main>
+            <div class="box">{% block body %} {% endblock %}</div>
+        </main>
+    </body>
+</html>
