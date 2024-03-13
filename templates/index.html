@@ -1,15 +1,30 @@
-{% extends "template.html" %} {% block body %}
+{% extends "template.html" %}
+<!-- Extend the base template -->
+
+{% block body %}
+<!-- Define a block named "body" -->
 <h1>Welcome</h1>
+<!-- Heading for the welcome message -->
 <p>Please select a topic.</p>
+<!-- Description to select a topic -->
 <label for="select">Topic:</label>
+<!-- Label for the dropdown -->
 <select name="select" id="select">
+    <!-- Dropdown menu to select a topic -->
     <option label="" value="null" hidden>Choose a topic</option>
+    <!-- Default option -->
     <optgroup label="Module 1">
+        <!-- Group of options -->
         <option value="newton2">Newton's Second Law</option>
+        <!-- Option for Newton's Second Law -->
     </optgroup>
     <optgroup label="Options">
+        <!-- Another group of options -->
         <option value="add">Add More...</option>
+        <!-- Option to add more topics -->
     </optgroup>
 </select>
 <button type="button" onclick="move_to_topic()">Go</button>
+<!-- Button to proceed -->
 {% endblock %}
+<!-- End of the "body" block -->

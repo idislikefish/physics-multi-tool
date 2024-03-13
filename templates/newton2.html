@@ -1,13 +1,23 @@
-{% extends "template.html" %} {% block body %}
+{% extends "template.html" %}
+<!-- Extend the base template -->
+
+{% block body %}
+<!-- Define a block named "body" -->
 <h1>Newton's 2nd Law</h1>
+<!-- Heading for Newton's 2nd Law -->
 <p>
     To calculate <b>force</b>, we do the <b>mass</b> of an object times its
     <b>acceleration</b>.
 </p>
+<!-- Explanation of the formula -->
 <var>F = m × a</var>
+<!-- Formula representation -->
 <br />
+<!-- Line break -->
 <var>F =</var>
+<!-- Placeholder for the result -->
 <br />
+<!-- Line break -->
 <input
     type="number"
     id="mass"
@@ -15,7 +25,9 @@
     oninput="newton2()"
     required
 />
+<!-- Input field for mass -->
 <br />
+<!-- Line break -->
 <input
     type="number"
     id="acc"
@@ -23,8 +35,14 @@
     oninput="newton2()"
     required
 />
+<!-- Input field for acceleration -->
 <br /><br />
+<!-- Line breaks -->
 <var id="answer">F =</var>
+<!-- Placeholder for the calculated force -->
 <br /><br />
+<!-- Line breaks -->
 <button type="button" onclick="document.location.href='/'">Back</button>
+<!-- Button to navigate back -->
 {% endblock %}
+<!-- End of the "body" block -->

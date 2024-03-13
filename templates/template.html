@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Link to the external stylesheet -->
         <link
             rel="stylesheet"
             href="{{ url_for('static', filename='styles/style.css') }}"
         />
+        <!-- Link to the favicon -->
         <link
             rel="icon"
             href="{{ url_for('static', filename='images/icon.png') }}"
         />
+        <!-- Link to the external JavaScript file -->
         <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+        <!-- Set the title of the page -->
         <title>Physics Multi-Tool</title>
     </head>
     <body>
+        <!-- Header section -->
         <header>
+            <!-- Logo image -->
             <img
                 src="{{ url_for('static', filename='images/icon.png') }}"
                 style="display: inline"
                 height="50px"
             />
             &ensp;
+            <!-- Non-breaking space for spacing -->
+            <!-- Title of the application -->
             <h1 style="display: inline">Physics Multi-Tool</h1>
         </header>
+        <!-- Main content area -->
         <main>
+            <!-- Container for the content, uses a block for dynamic content -->
             <div class="box">{% block body %} {% endblock %}</div>
         </main>
     </body>
