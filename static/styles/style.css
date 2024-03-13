@@ -42,12 +42,20 @@ li {
     margin-bottom: 5px;
 }
 
-input, button {
+input, select, button {
     margin-top: 10px;
     padding: 10px;
     border: none;
     border-radius: 5px;
     outline: none;
+}
+
+select {
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    background-color: #fff;
+    color: #333;
 }
 
 button {

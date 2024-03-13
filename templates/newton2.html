@@ -1,0 +1,18 @@
+{% extends "template.html" %} {% block body %}
+<h1>Newton's 2nd Law</h1>
+<p>
+    To calculate <b>force</b>, we do the <b>mass</b> of an object times its
+    <b>acceleration</b>.
+</p>
+<var>F = m × a</var>
+<br />
+<var>F =</var>
+<br />
+<input type="number" id="mass" placeholder="Mass" oninput="newton2()" required />
+<br />
+<input type="number" id="acc" placeholder="Acceleration" oninput="newton2()" required />
+<br /><br />
+<var id="answer">F =</var>
+<br /><br />
+<button type="button" onclick="document.location.href='/'">Back</button>
+{% endblock %}
